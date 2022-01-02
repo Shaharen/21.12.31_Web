@@ -16,15 +16,15 @@ public class Ex08UserInfo extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		request.setCharacterEncoding("UTF-8");
-		// ÇÏ³ªÀÇ °ª¸¸ Á¢±Ù °¡´É!!
+		// í•˜ë‚˜ì˜ ê°’ë§Œ ì ‘ê·¼ ê°€ëŠ¥!!
 		//String food = request.getParameter("food");
 		
-		// checkboxÅ¸ÀÔÀÇ °ªÀ» Á¢±ÙÇÒ ¶§ ¾Æ·¡ ¸Ş¼Òµå È°¿ë
-		// or name¼Ó¼º°ªÀÌ µ¿ÀÏÇÑ ¿©·¯°³ÀÇ ÀÔ·Â°ªÀ» Á¢±ÙÇÒ ¶§ È°¿ë
-		// => Ã¼Å©¹Ú½º°¡ ¾Æ´Ï¿©µµ name°ªÀÌ µ¿ÀÏÇÏ´Ù¸é
-		// ¹®ÀÚ¿­ ¹è¿­·Î ¹İÈ¯
+		// checkboxíƒ€ì…ì˜ ê°’ì„ ì ‘ê·¼í•  ë•Œ ì•„ë˜ ë©”ì†Œë“œ í™œìš©
+		// or nameì†ì„±ê°’ì´ ë™ì¼í•œ ì—¬ëŸ¬ê°œì˜ ì…ë ¥ê°’ì„ ì ‘ê·¼í•  ë•Œ í™œìš©
+		// => ì²´í¬ë°•ìŠ¤ê°€ ì•„ë‹ˆì—¬ë„ nameê°’ì´ ë™ì¼í•˜ë‹¤ë©´
+		// ë¬¸ìì—´ ë°°ì—´ë¡œ ë°˜í™˜
 		String[] foods = request.getParameterValues("food");
-		
+		 
 		
 		System.out.println(Arrays.toString(foods));
 	}
